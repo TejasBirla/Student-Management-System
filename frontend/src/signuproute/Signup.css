@@ -1,0 +1,92 @@
+.signup-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Header Styling */
+.signup-container h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Input Fields Styling */
+.signup-container input {
+    width: 85%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Input focus effect */
+.signup-container input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.7);
+}
+
+/* Button Styling */
+.signup-container button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    width: 85%;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.signup-container button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Error and Success Messages Styling */
+.signup-container .success {
+    color: #2ecc71;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.signup-container .error {
+    color: #e74c3c;
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-para {
+    font-size: 19px;
+    margin-top: 13px;
+}
+
+.login-text {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.login-text:hover {
+    color: #2980b9;
+}
