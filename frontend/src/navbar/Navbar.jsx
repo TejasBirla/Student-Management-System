@@ -27,6 +27,9 @@ export default function Navbar() {
           <Link to="/updatestudents">Update Students</Link>
         </li>
         <li>
+          <Link to="/filterstudents">Filter Students</Link>
+        </li>
+        <li>
           <Link to="/removestudents">Remove Students</Link>
         </li>
         {token ? (
