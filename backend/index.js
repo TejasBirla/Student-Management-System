@@ -234,6 +234,41 @@ app.patch("/updatestudent", AuthMiddleware, async (req, res) => {
   }
 });
 
+app.post("/filterstudents", AuthMiddleware, async (req, res) => {
+  const { course } = req.body;
+
+  // Check if filterBy and course are provided
+  if (!course) {
+    return res
+      .status(400)
+      .json({ success: false, message: "Course is required for filtering" });
+  }
+  const trimmedCourse = course.trim();
+  try {
+    // Fetch students based on the course
+    const studentDetails = await Student.find({
+      course: { $regex: new RegExp(trimmedCourse, "i") },
+    });
+
+    // If no students found
+    if (studentDetails.length === 0) {
+      return res
+        .status(404)
+        .json({ success: false, message: "No students found for this course" });
+    }
+
+    // Return the student details
+    return res.json({ success: true, studentDetails });
+
+  } catch (error) {
+    console.error("Error fetching students:", error);
+    return res.status(500).json({
+      success: false,
+      message: "An error occurred while fetching students",
+    });
+  }
+});
+
 // Delete Student by studentID - Protected
 app.delete("/removestudents", AuthMiddleware, async (req, res) => {
   const studentID = Number(req.body.studentID);
