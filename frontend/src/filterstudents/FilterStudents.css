@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filter-container {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.input-box {
+    margin: 20px 0;
+}
+
+
+.input-box select {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.fetch-btn {
+    width: 30%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fetch-btn:hover {
+    background-color: #2c5069;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 20px;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 3px;
+}
