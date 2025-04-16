@@ -56,3 +56,11 @@ select {
     color: #e74c3c;
     font-size: 18px;
 }
+
+.success {
+    color: #2ecc71;
+    margin: 15px 0px 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

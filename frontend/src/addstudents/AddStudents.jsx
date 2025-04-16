@@ -11,6 +11,7 @@ export default function AddStudents() {
   });
 
   const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -48,13 +49,14 @@ export default function AddStudents() {
     });
 
     const data = await response.json();
-    alert(data.message);
+    setMessage(data.message);
   };
 
   return (
     <>
       <h1 className="title">Add Student Data</h1>
       {error && <p className="error">{error}</p>}
+      {message && <p className="success">{message}</p>}
       <div className="box">
         <p>
           <label>Student Name</label>
