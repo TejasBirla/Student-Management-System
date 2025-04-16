@@ -36,3 +36,10 @@ h1 {
     color: #e74c3c;
     font-size: 18px;
 }
+
+.student-length
+{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 500;
+}
