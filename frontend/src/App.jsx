@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
 import Navbar from "./navbar/Navbar";
 import Welcome from "./Welcome";
 import Signup from "./signuproute/Signup";
@@ -10,6 +11,7 @@ import GetStudent from "./getStudent/GetStudent";
 import UpdateStudents from "./updatestudents/UpdateStudents";
 import FilterStudents from "./filterstudents/FilterStudents";
 import Removestudents from "./removestudents/Removestudents";
+
 
 export default function App() {
   return (

@@ -259,7 +259,6 @@ app.post("/filterstudents", AuthMiddleware, async (req, res) => {
 
     // Return the student details
     return res.json({ success: true, studentDetails });
-
   } catch (error) {
     console.error("Error fetching students:", error);
     return res.status(500).json({
